@@ -24,8 +24,8 @@ public class Solution {
 					stack.push(s[i]);
 				}
 				else{
-					if(s[i].equals(")")) {
-						if(stack.peek().equals("(")){
+					if(s[i].equals("(")) {
+						if(stack.peek().equals(")")){
 							stack.pop();
 						}
 						else {
@@ -33,8 +33,8 @@ public class Solution {
 							break;
 						}
 					}
-					else if(s[i].equals("}")) {
-						if(stack.peek().equals("{")){
+					else if(s[i].equals("{")) {
+						if(stack.peek().equals("}")){
 							stack.pop();
 						}
 						else {
@@ -42,8 +42,8 @@ public class Solution {
 							break;
 						}
 					}
-					else if(s[i].equals("]")) {
-						if(stack.peek().equals("[")){
+					else if(s[i].equals("[")) {
+						if(stack.peek().equals("]")){
 							stack.pop();
 						}
 						else {
